@@ -1,12 +1,12 @@
 import Foundation
 
-protocol CityFetcher {
+protocol CitiesFetcher {
 
     func fetchAvailableCities(onCompletion completion: @escaping ([City]) -> Void)
 }
 
 /// The stub service to simulate fetching available cities.
-final class CityDetectionService: CityFetcher {
+final class CitiesFetchService: CitiesFetcher {
 
     func fetchAvailableCities(onCompletion completion: @escaping ([City]) -> Void) {
 
