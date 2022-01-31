@@ -28,8 +28,10 @@ extension AppInteractorImp {
 
     func setupDI() {
 
-        let cityDetectionService = CityDetectionService()
+        let databaseService = DatabaseService()
+        let cityDetectionService = CitiesFetchService()
 
-        DIContainer.shared.register(cityDetectionService as CityDetectionService)
+        DIContainer.shared.register(databaseService as DatabaseService)
+        DIContainer.shared.register(cityDetectionService as CitiesFetchService)
     }
 }

@@ -26,7 +26,7 @@
 		EAB99F5F27A7FE9A00F2C4E9 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F5E27A7FE9A00F2C4E9 /* BaseCoordinator.swift */; };
 		EAB99F6227A8017D00F2C4E9 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F6127A8017D00F2C4E9 /* Location.swift */; };
 		EAB99F6427A8018600F2C4E9 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F6327A8018600F2C4E9 /* City.swift */; };
-		EAB99F6827A8032700F2C4E9 /* CityDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F6727A8032700F2C4E9 /* CityDetectionService.swift */; };
+		EAB99F6827A8032700F2C4E9 /* CitiesFetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F6727A8032700F2C4E9 /* CitiesFetchService.swift */; };
 		EAB99F6A27A8061200F2C4E9 /* DBCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F6927A8061200F2C4E9 /* DBCity.swift */; };
 		EAB99F7027A8094100F2C4E9 /* DBLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F6F27A8094100F2C4E9 /* DBLocation.swift */; };
 		EAB99F7227A80CB500F2C4E9 /* AppInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F7127A80CB500F2C4E9 /* AppInteractor.swift */; };
@@ -35,6 +35,28 @@
 		EAB99F7927A80D0100F2C4E9 /* AppCoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F7827A80D0100F2C4E9 /* AppCoordinatorAssembly.swift */; };
 		EAB99F7C27A80D2A00F2C4E9 /* AppInteractorImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F7B27A80D2A00F2C4E9 /* AppInteractorImp.swift */; };
 		EAB99F8227A8110700F2C4E9 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F8127A8110700F2C4E9 /* DIContainer.swift */; };
+		EAB99F8727A8137A00F2C4E9 /* CitySelectionCoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F8627A8137A00F2C4E9 /* CitySelectionCoordinatorAssembly.swift */; };
+		EAB99F8927A813C400F2C4E9 /* CitySelectionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F8827A813C400F2C4E9 /* CitySelectionCoordinator.swift */; };
+		EAB99F8F27A815D100F2C4E9 /* CityChoosingViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F8E27A815D100F2C4E9 /* CityChoosingViewInput.swift */; };
+		EAB99F9127A815DA00F2C4E9 /* CityChoosingViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F9027A815DA00F2C4E9 /* CityChoosingViewOutput.swift */; };
+		EAB99F9327A815E200F2C4E9 /* CityChoosingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F9227A815E200F2C4E9 /* CityChoosingView.swift */; };
+		EAB99F9627A816F500F2C4E9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F9527A816F500F2C4E9 /* BaseViewController.swift */; };
+		EAB99F9827A8175900F2C4E9 /* UIConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F9727A8175900F2C4E9 /* UIConfigurable.swift */; };
+		EAB99F9A27A818B500F2C4E9 /* CityChoosingModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F9927A818B500F2C4E9 /* CityChoosingModuleOutput.swift */; };
+		EAB99F9C27A818C200F2C4E9 /* CityChoosingModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F9B27A818C200F2C4E9 /* CityChoosingModuleInput.swift */; };
+		EAB99F9E27A818D600F2C4E9 /* CityChoosingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F9D27A818D600F2C4E9 /* CityChoosingPresenter.swift */; };
+		EAB99FA027A81A0200F2C4E9 /* CityChoosingInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F9F27A81A0100F2C4E9 /* CityChoosingInteractorInput.swift */; };
+		EAB99FA227A81A0900F2C4E9 /* CityChoosingInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99FA127A81A0900F2C4E9 /* CityChoosingInteractorOutput.swift */; };
+		EAB99FA427A81A1000F2C4E9 /* CityChoosingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99FA327A81A1000F2C4E9 /* CityChoosingInteractor.swift */; };
+		EAB99FA727A81D5300F2C4E9 /* CityChoosingModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99FA627A81D5300F2C4E9 /* CityChoosingModuleAssembly.swift */; };
+		EAB99FAA27A81E5B00F2C4E9 /* CityChoosingTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99FA927A81E5B00F2C4E9 /* CityChoosingTableViewAdapter.swift */; };
+		EAB99FAC27A81ED900F2C4E9 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99FAB27A81ED900F2C4E9 /* UITableView+Extensions.swift */; };
+		EAB99FAE27A81EF900F2C4E9 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99FAD27A81EF900F2C4E9 /* UITableViewCell+Extensions.swift */; };
+		EAB99FB027A81F1000F2C4E9 /* UITableHeaderFooterView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99FAF27A81F1000F2C4E9 /* UITableHeaderFooterView+Extensions.swift */; };
+		EAB99FB227A8200C00F2C4E9 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99FB127A8200C00F2C4E9 /* CityTableViewCell.swift */; };
+		EAB99FB627A821DE00F2C4E9 /* Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99FB527A821DE00F2C4E9 /* Previews.swift */; };
+		EAB99FB827A824B600F2C4E9 /* CellResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99FB727A824B600F2C4E9 /* CellResolver.swift */; };
+		EAB99FBA27A8336A00F2C4E9 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99FB927A8336A00F2C4E9 /* DatabaseService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +75,7 @@
 		EAB99F5E27A7FE9A00F2C4E9 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		EAB99F6127A8017D00F2C4E9 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		EAB99F6327A8018600F2C4E9 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
-		EAB99F6727A8032700F2C4E9 /* CityDetectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetectionService.swift; sourceTree = "<group>"; };
+		EAB99F6727A8032700F2C4E9 /* CitiesFetchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesFetchService.swift; sourceTree = "<group>"; };
 		EAB99F6927A8061200F2C4E9 /* DBCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBCity.swift; sourceTree = "<group>"; };
 		EAB99F6F27A8094100F2C4E9 /* DBLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBLocation.swift; sourceTree = "<group>"; };
 		EAB99F7127A80CB500F2C4E9 /* AppInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInteractor.swift; sourceTree = "<group>"; };
@@ -62,6 +84,28 @@
 		EAB99F7827A80D0100F2C4E9 /* AppCoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorAssembly.swift; sourceTree = "<group>"; };
 		EAB99F7B27A80D2A00F2C4E9 /* AppInteractorImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInteractorImp.swift; sourceTree = "<group>"; };
 		EAB99F8127A8110700F2C4E9 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		EAB99F8627A8137A00F2C4E9 /* CitySelectionCoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectionCoordinatorAssembly.swift; sourceTree = "<group>"; };
+		EAB99F8827A813C400F2C4E9 /* CitySelectionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectionCoordinator.swift; sourceTree = "<group>"; };
+		EAB99F8E27A815D100F2C4E9 /* CityChoosingViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityChoosingViewInput.swift; sourceTree = "<group>"; };
+		EAB99F9027A815DA00F2C4E9 /* CityChoosingViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityChoosingViewOutput.swift; sourceTree = "<group>"; };
+		EAB99F9227A815E200F2C4E9 /* CityChoosingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityChoosingView.swift; sourceTree = "<group>"; };
+		EAB99F9527A816F500F2C4E9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EAB99F9727A8175900F2C4E9 /* UIConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfigurable.swift; sourceTree = "<group>"; };
+		EAB99F9927A818B500F2C4E9 /* CityChoosingModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityChoosingModuleOutput.swift; sourceTree = "<group>"; };
+		EAB99F9B27A818C200F2C4E9 /* CityChoosingModuleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityChoosingModuleInput.swift; sourceTree = "<group>"; };
+		EAB99F9D27A818D600F2C4E9 /* CityChoosingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityChoosingPresenter.swift; sourceTree = "<group>"; };
+		EAB99F9F27A81A0100F2C4E9 /* CityChoosingInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityChoosingInteractorInput.swift; sourceTree = "<group>"; };
+		EAB99FA127A81A0900F2C4E9 /* CityChoosingInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityChoosingInteractorOutput.swift; sourceTree = "<group>"; };
+		EAB99FA327A81A1000F2C4E9 /* CityChoosingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityChoosingInteractor.swift; sourceTree = "<group>"; };
+		EAB99FA627A81D5300F2C4E9 /* CityChoosingModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityChoosingModuleAssembly.swift; sourceTree = "<group>"; };
+		EAB99FA927A81E5B00F2C4E9 /* CityChoosingTableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityChoosingTableViewAdapter.swift; sourceTree = "<group>"; };
+		EAB99FAB27A81ED900F2C4E9 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		EAB99FAD27A81EF900F2C4E9 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		EAB99FAF27A81F1000F2C4E9 /* UITableHeaderFooterView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableHeaderFooterView+Extensions.swift"; sourceTree = "<group>"; };
+		EAB99FB127A8200C00F2C4E9 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		EAB99FB527A821DE00F2C4E9 /* Previews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Previews.swift; sourceTree = "<group>"; };
+		EAB99FB727A824B600F2C4E9 /* CellResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellResolver.swift; sourceTree = "<group>"; };
+		EAB99FB927A8336A00F2C4E9 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +189,7 @@
 		EA586F4C27A7D76B00F5A904 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				EAB99FB427A821D300F2C4E9 /* SwiftUI */,
 				EA586F5927A7DB6A00F5A904 /* UIKit */,
 			);
 			path = Extensions;
@@ -153,6 +198,7 @@
 		EA586F4E27A7D78D00F5A904 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				EAB99F9427A816E400F2C4E9 /* ViewControllers */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -160,6 +206,7 @@
 		EA586F4F27A7D7A100F5A904 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				EAB99FB327A8204100F2C4E9 /* CityChoosing */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -168,6 +215,9 @@
 			isa = PBXGroup;
 			children = (
 				EA586F5727A7DB4B00F5A904 /* UIViewController+Extensions.swift */,
+				EAB99FAB27A81ED900F2C4E9 /* UITableView+Extensions.swift */,
+				EAB99FAD27A81EF900F2C4E9 /* UITableViewCell+Extensions.swift */,
+				EAB99FAF27A81F1000F2C4E9 /* UITableHeaderFooterView+Extensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -245,6 +295,7 @@
 		EAA1EAC027A7C2FF00D6EAB1 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				EAB99F8327A812E100F2C4E9 /* CitySelection */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -272,6 +323,8 @@
 			isa = PBXGroup;
 			children = (
 				EA586F4C27A7D76B00F5A904 /* Extensions */,
+				EAB99F9727A8175900F2C4E9 /* UIConfigurable.swift */,
+				EAB99FB727A824B600F2C4E9 /* CellResolver.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -288,7 +341,8 @@
 		EAB99F6527A802F500F2C4E9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				EAB99F6727A8032700F2C4E9 /* CityDetectionService.swift */,
+				EAB99F6727A8032700F2C4E9 /* CitiesFetchService.swift */,
+				EAB99FB927A8336A00F2C4E9 /* DatabaseService.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -325,6 +379,114 @@
 				EAB99F8127A8110700F2C4E9 /* DIContainer.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		EAB99F8327A812E100F2C4E9 /* CitySelection */ = {
+			isa = PBXGroup;
+			children = (
+				EAB99F8427A812EB00F2C4E9 /* Coordinator */,
+				EAB99F8527A812F000F2C4E9 /* Modules */,
+			);
+			path = CitySelection;
+			sourceTree = "<group>";
+		};
+		EAB99F8427A812EB00F2C4E9 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EAB99F8627A8137A00F2C4E9 /* CitySelectionCoordinatorAssembly.swift */,
+				EAB99F8827A813C400F2C4E9 /* CitySelectionCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		EAB99F8527A812F000F2C4E9 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EAB99F8A27A8159500F2C4E9 /* CityChoosing */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EAB99F8A27A8159500F2C4E9 /* CityChoosing */ = {
+			isa = PBXGroup;
+			children = (
+				EAB99F8B27A8159F00F2C4E9 /* View */,
+				EAB99F8C27A815A300F2C4E9 /* Presenter */,
+				EAB99F8D27A815A900F2C4E9 /* Interactor */,
+				EAB99FA527A81D2B00F2C4E9 /* Assembly */,
+			);
+			path = CityChoosing;
+			sourceTree = "<group>";
+		};
+		EAB99F8B27A8159F00F2C4E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EAB99FA827A81E1B00F2C4E9 /* Adapter */,
+				EAB99F8E27A815D100F2C4E9 /* CityChoosingViewInput.swift */,
+				EAB99F9027A815DA00F2C4E9 /* CityChoosingViewOutput.swift */,
+				EAB99F9227A815E200F2C4E9 /* CityChoosingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EAB99F8C27A815A300F2C4E9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EAB99F9B27A818C200F2C4E9 /* CityChoosingModuleInput.swift */,
+				EAB99F9927A818B500F2C4E9 /* CityChoosingModuleOutput.swift */,
+				EAB99F9D27A818D600F2C4E9 /* CityChoosingPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EAB99F8D27A815A900F2C4E9 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EAB99F9F27A81A0100F2C4E9 /* CityChoosingInteractorInput.swift */,
+				EAB99FA127A81A0900F2C4E9 /* CityChoosingInteractorOutput.swift */,
+				EAB99FA327A81A1000F2C4E9 /* CityChoosingInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EAB99F9427A816E400F2C4E9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EAB99F9527A816F500F2C4E9 /* BaseViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EAB99FA527A81D2B00F2C4E9 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				EAB99FA627A81D5300F2C4E9 /* CityChoosingModuleAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		EAB99FA827A81E1B00F2C4E9 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				EAB99FA927A81E5B00F2C4E9 /* CityChoosingTableViewAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		EAB99FB327A8204100F2C4E9 /* CityChoosing */ = {
+			isa = PBXGroup;
+			children = (
+				EAB99FB127A8200C00F2C4E9 /* CityTableViewCell.swift */,
+			);
+			path = CityChoosing;
+			sourceTree = "<group>";
+		};
+		EAB99FB427A821D300F2C4E9 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				EAB99FB527A821DE00F2C4E9 /* Previews.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,25 +619,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAB99FAA27A81E5B00F2C4E9 /* CityChoosingTableViewAdapter.swift in Sources */,
 				EA586F5827A7DB4B00F5A904 /* UIViewController+Extensions.swift in Sources */,
+				EAB99FBA27A8336A00F2C4E9 /* DatabaseService.swift in Sources */,
 				EAA1EA8827A7B1A000D6EAB1 /* AppDelegate.swift in Sources */,
 				EAA1EAAC27A7B9E400D6EAB1 /* R.generated.swift in Sources */,
+				EAB99FB227A8200C00F2C4E9 /* CityTableViewCell.swift in Sources */,
 				EAB99F6A27A8061200F2C4E9 /* DBCity.swift in Sources */,
 				EAB99F7027A8094100F2C4E9 /* DBLocation.swift in Sources */,
+				EAB99FA427A81A1000F2C4E9 /* CityChoosingInteractor.swift in Sources */,
+				EAB99FB027A81F1000F2C4E9 /* UITableHeaderFooterView+Extensions.swift in Sources */,
+				EAB99F9127A815DA00F2C4E9 /* CityChoosingViewOutput.swift in Sources */,
 				EA586F5C27A7DCBB00F5A904 /* RouterImp.swift in Sources */,
+				EAB99F9327A815E200F2C4E9 /* CityChoosingView.swift in Sources */,
+				EAB99FA027A81A0200F2C4E9 /* CityChoosingInteractorInput.swift in Sources */,
 				EAB99F6227A8017D00F2C4E9 /* Location.swift in Sources */,
+				EAB99F9E27A818D600F2C4E9 /* CityChoosingPresenter.swift in Sources */,
+				EAB99F9C27A818C200F2C4E9 /* CityChoosingModuleInput.swift in Sources */,
 				EA586F5E27A7DCC600F5A904 /* Router.swift in Sources */,
+				EAB99FAC27A81ED900F2C4E9 /* UITableView+Extensions.swift in Sources */,
 				EAB99F6427A8018600F2C4E9 /* City.swift in Sources */,
 				EA586F5627A7DB0E00F5A904 /* Module.swift in Sources */,
 				EAB99F7227A80CB500F2C4E9 /* AppInteractor.swift in Sources */,
-				EAB99F6827A8032700F2C4E9 /* CityDetectionService.swift in Sources */,
+				EAB99F6827A8032700F2C4E9 /* CitiesFetchService.swift in Sources */,
+				EAB99F9A27A818B500F2C4E9 /* CityChoosingModuleOutput.swift in Sources */,
+				EAB99F9827A8175900F2C4E9 /* UIConfigurable.swift in Sources */,
 				EAB99F8227A8110700F2C4E9 /* DIContainer.swift in Sources */,
+				EAB99FA227A81A0900F2C4E9 /* CityChoosingInteractorOutput.swift in Sources */,
+				EAB99FA727A81D5300F2C4E9 /* CityChoosingModuleAssembly.swift in Sources */,
 				EAB99F7427A80CE100F2C4E9 /* AppCoordinator.swift in Sources */,
+				EAB99FAE27A81EF900F2C4E9 /* UITableViewCell+Extensions.swift in Sources */,
 				EAB99F7727A80CF600F2C4E9 /* AppCoordinatorImp.swift in Sources */,
 				EAB99F5D27A7FE7100F2C4E9 /* Coordinator.swift in Sources */,
+				EAB99FB627A821DE00F2C4E9 /* Previews.swift in Sources */,
 				EAB99F7C27A80D2A00F2C4E9 /* AppInteractorImp.swift in Sources */,
 				EAB99F5F27A7FE9A00F2C4E9 /* BaseCoordinator.swift in Sources */,
+				EAB99F9627A816F500F2C4E9 /* BaseViewController.swift in Sources */,
+				EAB99FB827A824B600F2C4E9 /* CellResolver.swift in Sources */,
+				EAB99F8F27A815D100F2C4E9 /* CityChoosingViewInput.swift in Sources */,
+				EAB99F8927A813C400F2C4E9 /* CitySelectionCoordinator.swift in Sources */,
 				EAB99F7927A80D0100F2C4E9 /* AppCoordinatorAssembly.swift in Sources */,
+				EAB99F8727A8137A00F2C4E9 /* CitySelectionCoordinatorAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
