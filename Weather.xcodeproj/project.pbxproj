@@ -34,6 +34,7 @@
 		EAB99F7727A80CF600F2C4E9 /* AppCoordinatorImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F7627A80CF600F2C4E9 /* AppCoordinatorImp.swift */; };
 		EAB99F7927A80D0100F2C4E9 /* AppCoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F7827A80D0100F2C4E9 /* AppCoordinatorAssembly.swift */; };
 		EAB99F7C27A80D2A00F2C4E9 /* AppInteractorImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F7B27A80D2A00F2C4E9 /* AppInteractorImp.swift */; };
+		EAB99F8227A8110700F2C4E9 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F8127A8110700F2C4E9 /* DIContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		EAB99F7627A80CF600F2C4E9 /* AppCoordinatorImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorImp.swift; sourceTree = "<group>"; };
 		EAB99F7827A80D0100F2C4E9 /* AppCoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorAssembly.swift; sourceTree = "<group>"; };
 		EAB99F7B27A80D2A00F2C4E9 /* AppInteractorImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInteractorImp.swift; sourceTree = "<group>"; };
+		EAB99F8127A8110700F2C4E9 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +252,7 @@
 		EAA1EAC127A7C30E00D6EAB1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				EAB99F8027A810FD00F2C4E9 /* Shared */,
 				EAB99F6627A8030600F2C4E9 /* Scenes */,
 				EAB99F6527A802F500F2C4E9 /* Common */,
 			);
@@ -314,6 +317,14 @@
 				EAB99F7B27A80D2A00F2C4E9 /* AppInteractorImp.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EAB99F8027A810FD00F2C4E9 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EAB99F8127A8110700F2C4E9 /* DIContainer.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,6 +469,7 @@
 				EA586F5627A7DB0E00F5A904 /* Module.swift in Sources */,
 				EAB99F7227A80CB500F2C4E9 /* AppInteractor.swift in Sources */,
 				EAB99F6827A8032700F2C4E9 /* CityDetectionService.swift in Sources */,
+				EAB99F8227A8110700F2C4E9 /* DIContainer.swift in Sources */,
 				EAB99F7427A80CE100F2C4E9 /* AppCoordinator.swift in Sources */,
 				EAB99F7727A80CF600F2C4E9 /* AppCoordinatorImp.swift in Sources */,
 				EAB99F5D27A7FE7100F2C4E9 /* Coordinator.swift in Sources */,

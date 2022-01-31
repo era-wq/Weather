@@ -10,6 +10,8 @@ final class AppInteractorImp: NSObject, AppInteractor {
         self.window = window
 
         super.init()
+
+        setupDI()
     }
 
     func onStart() {
@@ -19,5 +21,15 @@ final class AppInteractorImp: NSObject, AppInteractor {
 
         window?.rootViewController = appCoordinator?.viewController
         window?.makeKeyAndVisible()
+    }
+}
+
+extension AppInteractorImp {
+
+    func setupDI() {
+
+        let cityDetectionService = CityDetectionService()
+
+        DIContainer.shared.register(cityDetectionService as CityDetectionService)
     }
 }
