@@ -47,6 +47,89 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA586F4327A7D69A00F5A904 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EA586F4527A7D6D900F5A904 /* Coordinator */,
+				EA586F4627A7D6E300F5A904 /* Module */,
+				EA586F4727A7D70F00F5A904 /* Router */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EA586F4427A7D6AB00F5A904 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				EA586F4B27A7D75F00F5A904 /* Network */,
+				EA586F4827A7D72500F5A904 /* DB */,
+				EA586F4A27A7D75600F5A904 /* Plain */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		EA586F4527A7D6D900F5A904 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		EA586F4627A7D6E300F5A904 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		EA586F4727A7D70F00F5A904 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EA586F4827A7D72500F5A904 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		EA586F4A27A7D75600F5A904 /* Plain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Plain;
+			sourceTree = "<group>";
+		};
+		EA586F4B27A7D75F00F5A904 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EA586F4C27A7D76B00F5A904 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EA586F4E27A7D78D00F5A904 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EA586F4F27A7D7A100F5A904 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		EAA1EA7B27A7B1A000D6EAB1 = {
 			isa = PBXGroup;
 			children = (
@@ -67,7 +150,9 @@
 			isa = PBXGroup;
 			children = (
 				EAA1EA9E27A7B31000D6EAB1 /* App */,
+				EAA1EABF27A7C2F700D6EAB1 /* Core */,
 				EAA1EA9D27A7B30400D6EAB1 /* Resources */,
+				EAA1EAC027A7C2FF00D6EAB1 /* Scenes */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -90,6 +175,49 @@
 				EAA1EA8727A7B1A000D6EAB1 /* AppDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		EAA1EABF27A7C2F700D6EAB1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EA586F4327A7D69A00F5A904 /* Base */,
+				EAA1EAC227A7C39600D6EAB1 /* Components */,
+				EA586F4427A7D6AB00F5A904 /* Entities */,
+				EAA1EAC127A7C30E00D6EAB1 /* Services */,
+				EAA1EAC327A7C39C00D6EAB1 /* SupportingFiles */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EAA1EAC027A7C2FF00D6EAB1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EAA1EAC127A7C30E00D6EAB1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EAA1EAC227A7C39600D6EAB1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EA586F4F27A7D7A100F5A904 /* Scenes */,
+				EA586F4E27A7D78D00F5A904 /* Common */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		EAA1EAC327A7C39C00D6EAB1 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EA586F4C27A7D76B00F5A904 /* Extensions */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
