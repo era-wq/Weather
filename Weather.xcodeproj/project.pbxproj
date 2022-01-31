@@ -10,6 +10,14 @@
 		EAA1EA8827A7B1A000D6EAB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA1EA8727A7B1A000D6EAB1 /* AppDelegate.swift */; };
 		EAA1EA9127A7B1A200D6EAB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA1EA9027A7B1A200D6EAB1 /* Assets.xcassets */; };
 		EAA1EA9427A7B1A200D6EAB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA1EA9227A7B1A200D6EAB1 /* LaunchScreen.storyboard */; };
+		EAA1EAA827A7B56E00D6EAB1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAA1EAAA27A7B56E00D6EAB1 /* Localizable.strings */; };
+		EAA1EAAC27A7B9E400D6EAB1 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA1EAAB27A7B9E400D6EAB1 /* R.generated.swift */; };
+		EAA1EAAF27A7BA7900D6EAB1 /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = EAA1EAAE27A7BA7900D6EAB1 /* Rswift */; };
+		EAA1EAB227A7BA9900D6EAB1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EAA1EAB127A7BA9900D6EAB1 /* SnapKit */; };
+		EAA1EAB527A7BAA500D6EAB1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EAA1EAB427A7BAA500D6EAB1 /* Alamofire */; };
+		EAA1EAB827A7BAD700D6EAB1 /* SVGKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EAA1EAB727A7BAD700D6EAB1 /* SVGKitSwift */; };
+		EAA1EABB27A7BB6900D6EAB1 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EAA1EABA27A7BB6900D6EAB1 /* RealmSwift */; };
+		EAA1EABE27A7BF1C00D6EAB1 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = EAA1EABD27A7BF1C00D6EAB1 /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +26,8 @@
 		EAA1EA9027A7B1A200D6EAB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAA1EA9327A7B1A200D6EAB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAA1EA9527A7B1A200D6EAB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAA1EAA927A7B56E00D6EAB1 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EAA1EAAB27A7B9E400D6EAB1 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +35,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAA1EABE27A7BF1C00D6EAB1 /* SDWebImage in Frameworks */,
+				EAA1EAB827A7BAD700D6EAB1 /* SVGKitSwift in Frameworks */,
+				EAA1EAB527A7BAA500D6EAB1 /* Alamofire in Frameworks */,
+				EAA1EAAF27A7BA7900D6EAB1 /* Rswift in Frameworks */,
+				EAA1EABB27A7BB6900D6EAB1 /* RealmSwift in Frameworks */,
+				EAA1EAB227A7BA9900D6EAB1 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +75,8 @@
 		EAA1EA9D27A7B30400D6EAB1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EAA1EAAB27A7B9E400D6EAB1 /* R.generated.swift */,
+				EAA1EAAA27A7B56E00D6EAB1 /* Localizable.strings */,
 				EAA1EA9027A7B1A200D6EAB1 /* Assets.xcassets */,
 				EAA1EA9227A7B1A200D6EAB1 /* LaunchScreen.storyboard */,
 				EAA1EA9527A7B1A200D6EAB1 /* Info.plist */,
@@ -81,6 +99,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAA1EA9827A7B1A200D6EAB1 /* Build configuration list for PBXNativeTarget "Weather" */;
 			buildPhases = (
+				EAA1EAA227A7B4B400D6EAB1 /* SwiftLint */,
+				EAA1EAA327A7B4EA00D6EAB1 /* R.swift */,
 				EAA1EA8027A7B1A000D6EAB1 /* Sources */,
 				EAA1EA8127A7B1A000D6EAB1 /* Frameworks */,
 				EAA1EA8227A7B1A000D6EAB1 /* Resources */,
@@ -90,6 +110,14 @@
 			dependencies = (
 			);
 			name = Weather;
+			packageProductDependencies = (
+				EAA1EAAE27A7BA7900D6EAB1 /* Rswift */,
+				EAA1EAB127A7BA9900D6EAB1 /* SnapKit */,
+				EAA1EAB427A7BAA500D6EAB1 /* Alamofire */,
+				EAA1EAB727A7BAD700D6EAB1 /* SVGKitSwift */,
+				EAA1EABA27A7BB6900D6EAB1 /* RealmSwift */,
+				EAA1EABD27A7BF1C00D6EAB1 /* SDWebImage */,
+			);
 			productName = Weather;
 			productReference = EAA1EA8427A7B1A000D6EAB1 /* Weather.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +146,14 @@
 				Base,
 			);
 			mainGroup = EAA1EA7B27A7B1A000D6EAB1;
+			packageReferences = (
+				EAA1EAAD27A7BA7900D6EAB1 /* XCRemoteSwiftPackageReference "R.swift" */,
+				EAA1EAB027A7BA9900D6EAB1 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				EAA1EAB327A7BAA500D6EAB1 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				EAA1EAB627A7BAD700D6EAB1 /* XCRemoteSwiftPackageReference "SVGKit" */,
+				EAA1EAB927A7BB6900D6EAB1 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				EAA1EABC27A7BF1C00D6EAB1 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = EAA1EA8527A7B1A000D6EAB1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,11 +169,53 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAA1EA9427A7B1A200D6EAB1 /* LaunchScreen.storyboard in Resources */,
+				EAA1EAA827A7B56E00D6EAB1 /* Localizable.strings in Resources */,
 				EAA1EA9127A7B1A200D6EAB1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EAA1EAA227A7B4B400D6EAB1 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		EAA1EAA327A7B4EA00D6EAB1 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/Source/Resources/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/tools/rswift\" generate \"$SRCROOT/Source/Resources/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EAA1EA8027A7B1A000D6EAB1 /* Sources */ = {
@@ -145,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAA1EA8827A7B1A000D6EAB1 /* AppDelegate.swift in Sources */,
+				EAA1EAAC27A7B9E400D6EAB1 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +236,14 @@
 				EAA1EA9327A7B1A200D6EAB1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EAA1EAAA27A7B56E00D6EAB1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAA1EAA927A7B56E00D6EAB1 /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -360,6 +447,90 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EAA1EAAD27A7BA7900D6EAB1 /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+		EAA1EAB027A7BA9900D6EAB1 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		EAA1EAB327A7BAA500D6EAB1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		EAA1EAB627A7BAD700D6EAB1 /* XCRemoteSwiftPackageReference "SVGKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SVGKit/SVGKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		EAA1EAB927A7BB6900D6EAB1 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.22.0;
+			};
+		};
+		EAA1EABC27A7BF1C00D6EAB1 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EAA1EAAE27A7BA7900D6EAB1 /* Rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAA1EAAD27A7BA7900D6EAB1 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = Rswift;
+		};
+		EAA1EAB127A7BA9900D6EAB1 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAA1EAB027A7BA9900D6EAB1 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		EAA1EAB427A7BAA500D6EAB1 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAA1EAB327A7BAA500D6EAB1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		EAA1EAB727A7BAD700D6EAB1 /* SVGKitSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAA1EAB627A7BAD700D6EAB1 /* XCRemoteSwiftPackageReference "SVGKit" */;
+			productName = SVGKitSwift;
+		};
+		EAA1EABA27A7BB6900D6EAB1 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAA1EAB927A7BB6900D6EAB1 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		EAA1EABD27A7BF1C00D6EAB1 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAA1EABC27A7BF1C00D6EAB1 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EAA1EA7C27A7B1A000D6EAB1 /* Project object */;
 }
