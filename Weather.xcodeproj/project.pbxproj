@@ -22,6 +22,8 @@
 		EAA1EAB827A7BAD700D6EAB1 /* SVGKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EAA1EAB727A7BAD700D6EAB1 /* SVGKitSwift */; };
 		EAA1EABB27A7BB6900D6EAB1 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EAA1EABA27A7BB6900D6EAB1 /* RealmSwift */; };
 		EAA1EABE27A7BF1C00D6EAB1 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = EAA1EABD27A7BF1C00D6EAB1 /* SDWebImage */; };
+		EAB99F5D27A7FE7100F2C4E9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F5C27A7FE7100F2C4E9 /* Coordinator.swift */; };
+		EAB99F5F27A7FE9A00F2C4E9 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F5E27A7FE9A00F2C4E9 /* BaseCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		EAA1EA9527A7B1A200D6EAB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAA1EAA927A7B56E00D6EAB1 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EAA1EAAB27A7B9E400D6EAB1 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		EAB99F5C27A7FE7100F2C4E9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		EAB99F5E27A7FE9A00F2C4E9 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 		EA586F4527A7D6D900F5A904 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				EAB99F5C27A7FE7100F2C4E9 /* Coordinator.swift */,
+				EAB99F5E27A7FE9A00F2C4E9 /* BaseCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -376,6 +382,8 @@
 				EA586F5C27A7DCBB00F5A904 /* RouterImp.swift in Sources */,
 				EA586F5E27A7DCC600F5A904 /* Router.swift in Sources */,
 				EA586F5627A7DB0E00F5A904 /* Module.swift in Sources */,
+				EAB99F5D27A7FE7100F2C4E9 /* Coordinator.swift in Sources */,
+				EAB99F5F27A7FE9A00F2C4E9 /* BaseCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
