@@ -1,14 +1,15 @@
 import UIKit
 
-class CityChoosingModuleAssembly {
+class CityForecastModuleAssembly {
 
     class func assembly() -> (view: UIViewController,
-                              output: CityChoosingModuleOutput) {
+                              input: CityForecastModuleInput,
+                              output: CityForecastModuleOutput) {
 
-        let view = CityChoosingView()
-        let presenter = CityChoosingPresenter()
-        let interactor = CityChoosingInteractor()
-        let tableViewAdapter = CityChoosingTableViewAdapterImp()
+        let view = CityForecastView()
+        let presenter = CityForecastPresenter()
+        let interactor = CityForecastInteractor()
+        let tableViewAdapter = CityForecastTableViewAdapterImp()
 
         tableViewAdapter.delegate = presenter
 
@@ -18,13 +19,13 @@ class CityChoosingModuleAssembly {
         presenter.interactor = interactor
         presenter.tableViewAdapter = tableViewAdapter
 
-        let network: CitiesFetchService? = DIContainer.shared.resolve()
+        let network: NetworkManager? = DIContainer.shared.resolve()
         let database: DatabaseService? = DIContainer.shared.resolve()
 
         interactor.presenter = presenter
         interactor.network = network
         interactor.database = database
 
-        return (view, presenter)
+        return (view, presenter, presenter)
     }
 }

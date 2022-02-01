@@ -3,7 +3,7 @@ import Dispatch
 final class CityChoosingInteractor {
 
     weak var presenter: CityChoosingInteractorOutput?
-    var network: CitiesFetchService?
+    var network: CitiesFetcher?
     var database: CitySaver?
 
     #if DEBUG
@@ -19,10 +19,7 @@ extension CityChoosingInteractor: CityChoosingInteractorInput {
 
     func save(_ city: City) {
 
-        DispatchQueue.global().async {
-
-            self.database?.save(city)
-        }
+        self.database?.save(city)
     }
 
     func obtainAvailableCities() {

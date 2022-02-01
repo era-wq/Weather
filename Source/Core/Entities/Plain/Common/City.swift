@@ -13,3 +13,17 @@ struct CityModel: City {
     let name: String
     let location: Location
 }
+
+extension CityModel: DatabaseErasable {
+
+    func eraseToDatabase() -> DBCity {
+
+        let object = DBCity()
+
+        object.id = id
+        object.name = name
+        object.location = (location as? LocationModel)?.eraseToDatabase()
+
+        return object
+    }
+}

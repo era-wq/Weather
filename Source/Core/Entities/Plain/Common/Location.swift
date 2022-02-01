@@ -17,3 +17,16 @@ class LocationModel: Location {
         self.longitude = longitude
     }
 }
+
+extension LocationModel: DatabaseErasable {
+
+    func eraseToDatabase() -> DBLocation {
+
+        let object = DBLocation()
+
+        object.latitude = latitude
+        object.longitude = longitude
+
+        return object
+    }
+}

@@ -1,1 +1,5 @@
 "CitySelection.Choosing.NavigationBarTitle" = "Выберите город";
+"Forecast.CityForecast.Wearher.Night" = "Ночью";
+"Forecast.CityForecast.Wearher.Morning" = "Утром";
+"Forecast.CityForecast.Wearher.Day" = "Днем";
+"Forecast.CityForecast.Wearher.Evening" = "Вечером";

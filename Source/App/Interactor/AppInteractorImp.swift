@@ -28,10 +28,14 @@ extension AppInteractorImp {
 
     func setupDI() {
 
+        let networkManager = NetworkManager()
         let databaseService = DatabaseService()
-        let cityDetectionService = CitiesFetchService()
+        let appInitialStateService = AppInitialStateServiceImp(database: databaseService)
+        let citiesFetchService = CitiesFetchService()
 
+        DIContainer.shared.register(networkManager as NetworkManager)
         DIContainer.shared.register(databaseService as DatabaseService)
-        DIContainer.shared.register(cityDetectionService as CitiesFetchService)
+        DIContainer.shared.register(appInitialStateService as AppInitialStateService)
+        DIContainer.shared.register(citiesFetchService as CitiesFetchService)
     }
 }
