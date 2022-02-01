@@ -6,6 +6,12 @@ final class CityChoosingPresenter: CityChoosingModuleInput,
     var tableViewAdapter: CityChoosingTableViewAdapter?
 
     var onChooseCity: ((City) -> Void)?
+
+    #if DEBUG
+    deinit {
+        print("CityChoosingPresenter deinit")
+    }
+    #endif
 }
 
 // MARK: - CityChoosingViewOutput implementation

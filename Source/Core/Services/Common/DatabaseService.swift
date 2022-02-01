@@ -6,6 +6,17 @@ protocol CitySaver {
     func save(_ city: City)
 }
 
+protocol WeatherSaver {
+
+    func save(_ weather: Weather)
+}
+
+protocol WeatherFetcher {
+
+    func fetchSavedWeather(onCompletion completion: @escaping (Weather?) -> Void)
+    func observeChanges(onChange changes: @escaping (DatabaseChanges<DBWeather>) -> Void)
+}
+
 protocol CityFetcher {
 
     func fetchSavedCity(onCompletion completion: @escaping (City?) -> Void)
@@ -15,8 +26,11 @@ final class DatabaseService: NSObject {
 
     typealias Error = ((_ error: Swift.Error) -> Void)
     typealias SaveResponse<T> = ((Realm, T?) -> Void)
+    typealias ObserveResponse<T: Object> = (Swift.Result<DatabaseChanges<T>, Swift.Error>) -> Void
 
     private let database: Realm
+
+    private var tokens: [NotificationToken] = []
 
     override init() {
 
@@ -26,6 +40,11 @@ final class DatabaseService: NSObject {
             fatalError("Could not configure Realm - " + error.localizedDescription)
         }
         super.init()
+    }
+
+    deinit {
+
+        tokens.forEach { $0.invalidate() }
     }
 
     func save<T: Object>(_ object: T,
@@ -67,23 +86,57 @@ final class DatabaseService: NSObject {
 
         block(data)
     }
+
+    func observeChanges<T: Object>(
+        of model: T.Type,
+        onChange completion: @escaping ObserveResponse<T>
+    ) {
+
+        do {
+
+            let configuration = database.configuration
+            let realm = try Realm(configuration: configuration)
+
+            let objects = realm.objects(model)
+
+            let token = objects.observe { changes in
+
+                switch changes {
+                case .initial:
+                    break
+                case let .update(results,
+                                 deletions: _,
+                                 insertions: insertions,
+                                 modifications: modifications):
+
+                    let changes = DatabaseChanges(results: results,
+                                                  insertions: insertions,
+                                                  modifications: modifications)
+
+                    completion(.success(changes))
+                case .error(let error):
+                    completion(.failure(error))
+                }
+            }
+
+            self.tokens.append(token)
+
+        } catch {
+            completion(.failure(error))
+        }
+    }
 }
 
 extension DatabaseService: CitySaver {
 
     func save(_ city: City) {
 
-        let cityObject = DBCity()
-        let locationObject = DBLocation()
+        guard let object = (city as? CityModel)?.eraseToDatabase() else {
 
-        locationObject.latitude = city.location.latitude
-        locationObject.longitude = city.location.longitude
+            return
+        }
 
-        cityObject.id = city.id
-        cityObject.name = city.name
-        cityObject.location = locationObject
-
-        save(cityObject)
+        save(object)
     }
 }
 
@@ -94,18 +147,53 @@ extension DatabaseService: CityFetcher {
         retrieve(DBCity.self) { object in
 
             guard let object = object.first,
-                  let location = object.location else {
+                  let city = object.eraseToLocal() else {
                       completion(nil)
                       return
                   }
 
-            let cityCoordinates = LocationModel(latitude: location.latitude,
-                                                longitude: location.longitude)
-            let city = CityModel(id: object.id,
-                                 name: object.name,
-                                 location: cityCoordinates)
-
             completion(city)
+        }
+    }
+}
+
+extension DatabaseService: WeatherSaver {
+
+    func save(_ weather: Weather) {
+
+        let model = weather.eraseToDatabase()
+
+        save(model)
+    }
+}
+
+extension DatabaseService: WeatherFetcher {
+
+    func fetchSavedWeather(onCompletion completion: @escaping (Weather?) -> Void) {
+
+        retrieve(DBWeather.self) { object in
+
+            guard let object = object.first,
+                  let weather = object.eraseToLocal() else {
+                      completion(nil)
+                      return
+                  }
+
+            completion(weather)
+        }
+    }
+
+    func observeChanges(onChange completion: @escaping (DatabaseChanges<DBWeather>) -> Void) {
+
+        observeChanges(of: DBWeather.self) { result in
+
+            switch result {
+            case .success(let changes):
+
+                completion(changes)
+            case .failure(let error):
+                print(error)
+            }
         }
     }
 }

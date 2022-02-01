@@ -9,6 +9,8 @@ class AppCoordinatorAssembly {
 
         let coordinator = AppCoordinatorImp(router: router)
 
+        coordinator.appInitialStateService = DIContainer.shared.resolve()
+
         return coordinator
     }
 }
