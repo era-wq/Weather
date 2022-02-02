@@ -119,7 +119,7 @@ final class DatabaseService: NSObject {
                 }
             }
 
-            self.tokens.append(token)
+            tokens.append(token)
 
         } catch {
             completion(.failure(error))

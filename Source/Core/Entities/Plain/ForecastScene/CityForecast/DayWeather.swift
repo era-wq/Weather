@@ -11,19 +11,19 @@ extension DayWeatherModel {
     init(from forecast: ForecastWeather) {
 
         let night = DayForecast(icon: forecast.parts.night.icon.eraseToIconUrl(),
-                                dayPartTitle: R.string.localizable.forecastCityForecastWearherNight(),
+                                dayPartTitle: R.string.localizable.forecastCityForecastWeatherNight(),
                                 temperature: forecast.parts.night.temperature.eraseToCelsius())
 
         let morning = DayForecast(icon: forecast.parts.morning.icon.eraseToIconUrl(),
-                                  dayPartTitle: R.string.localizable.forecastCityForecastWearherMorning(),
+                                  dayPartTitle: R.string.localizable.forecastCityForecastWeatherMorning(),
                                   temperature: forecast.parts.morning.temperature.eraseToCelsius())
 
         let day = DayForecast(icon: forecast.parts.day.icon.eraseToIconUrl(),
-                              dayPartTitle: R.string.localizable.forecastCityForecastWearherDay(),
+                              dayPartTitle: R.string.localizable.forecastCityForecastWeatherDay(),
                               temperature: forecast.parts.day.temperature.eraseToCelsius())
 
         let evening = DayForecast(icon: forecast.parts.evening.icon.eraseToIconUrl(),
-                                  dayPartTitle: R.string.localizable.forecastCityForecastWearherEvening(),
+                                  dayPartTitle: R.string.localizable.forecastCityForecastWeatherEvening(),
                                   temperature: forecast.parts.evening.temperature.eraseToCelsius())
 
         self.day = DayWeatherHeader(from: forecast)

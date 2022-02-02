@@ -4,7 +4,7 @@ struct DaysHourForecast {
 
     let hourTimeStamp: Int
     let temperature: Int
-    let icon: URL?
+    let icon: String
 }
 
 extension DaysHourForecast: DatabaseErasable {
@@ -15,7 +15,7 @@ extension DaysHourForecast: DatabaseErasable {
 
         object.hourTimeStamp = hourTimeStamp
         object.temperature = temperature
-        object.icon = icon?.absoluteString ?? ""
+        object.icon = icon
 
         return object
     }

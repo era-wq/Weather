@@ -74,3 +74,48 @@ extension Date {
         return dateFormatter.string(from: self)
     }
 }
+
+extension Date {
+
+    func eraseTo24HoursFormat() -> String? {
+
+        let dateComponents: DateComponents = {
+
+            var calendar = Calendar.current
+            calendar.locale = Locale(identifier: "ru")
+            let components = calendar.dateComponents([.hour],
+                                                     from: self)
+            return components
+        }()
+
+        guard let hour = dateComponents.hour else { return nil }
+
+        return hour.eraseToString() + ":00"
+    }
+}
+
+extension Double {
+
+    func eraseToDate() -> Date {
+
+        Date(timeIntervalSince1970: self)
+    }
+}
+
+extension Int {
+
+    func eraseToDouble() -> Double {
+
+        Double(self)
+    }
+
+    func eraseToString() -> String {
+
+        String(self)
+    }
+
+    func eraseToDate() -> Date {
+
+        eraseToDouble().eraseToDate()
+    }
+}
