@@ -41,11 +41,20 @@ private extension ForecastCoordinator {
 
         module.input.onInsertingCity(city)
 
-        module.output.onChooseDay = { [weak self] _ in
+        module.output.onChooseDay = { [weak self] hours in
 
-            // hours screen
+            self?.showHourForecast(using: hours)
         }
 
         router.root(module.view, animated: true)
+    }
+
+    func showHourForecast(using hours: [DaysHourForecast]) {
+
+        let module = HourForecastModuleAssembly.assembly()
+
+        module.input.insertWeatherIn(hours)
+
+        router.push(module.view, animated: true)
     }
 }

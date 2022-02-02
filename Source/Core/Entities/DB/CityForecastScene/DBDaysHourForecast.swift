@@ -12,8 +12,6 @@ extension DBDaysHourForecast: LocalErasable {
 
     func eraseToLocal() -> DaysHourForecast? {
 
-        let icon = URL(string: icon)
-
         let daysHourForecast = DaysHourForecast(hourTimeStamp: hourTimeStamp,
                                                 temperature: temperature,
                                                 icon: icon)

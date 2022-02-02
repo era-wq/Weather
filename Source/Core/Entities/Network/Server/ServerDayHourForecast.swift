@@ -24,12 +24,10 @@ extension ServerDaysHourForecast: LocalErasable {
                   return nil
               }
 
-        let url = URL(string: icon)
-
         let hourForecast = DaysHourForecast(
             hourTimeStamp: hourTimeStamp,
             temperature: temperature,
-            icon: url
+            icon: icon
         )
 
         return hourForecast

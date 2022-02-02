@@ -1,5 +1,6 @@
 "CitySelection.Choosing.NavigationBarTitle" = "Выберите город";
-"Forecast.CityForecast.Wearher.Night" = "Ночью";
-"Forecast.CityForecast.Wearher.Morning" = "Утром";
-"Forecast.CityForecast.Wearher.Day" = "Днем";
-"Forecast.CityForecast.Wearher.Evening" = "Вечером";
+"Forecast.CityForecast.Weather.Night" = "Ночью";
+"Forecast.CityForecast.Weather.Morning" = "Утром";
+"Forecast.CityForecast.Weather.Day" = "Днем";
+"Forecast.CityForecast.Weather.Evening" = "Вечером";
+"Forecast.HourForecast.NavigationBarTitle" = "Почасовой прогноз";
