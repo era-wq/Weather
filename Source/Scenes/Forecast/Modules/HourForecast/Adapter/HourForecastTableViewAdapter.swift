@@ -1,7 +1,6 @@
 import UIKit
 
-protocol HourForecastTableViewAdapterDelegate: AnyObject {
-}
+protocol HourForecastTableViewAdapterDelegate: AnyObject {}
 
 protocol HourForecastTableViewAdapter {
 
@@ -12,6 +11,7 @@ protocol HourForecastTableViewAdapter {
 // swiftlint:disable type_name
 final class HourForecastTableViewAdapterImp: NSObject,
                                              HourForecastTableViewAdapter {
+// swiftlint:enable type_name
 
     private var tableView: UITableView?
 

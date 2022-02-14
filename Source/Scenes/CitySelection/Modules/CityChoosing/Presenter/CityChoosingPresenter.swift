@@ -20,7 +20,6 @@ extension CityChoosingPresenter: CityChoosingViewOutput {
 
     func onViewDidLoad() {
 
-        view?.setTitle(Appearance.navigationBarTitle)
         view?.isLoading(true)
         interactor?.obtainAvailableCities()
     }
@@ -46,13 +45,5 @@ extension CityChoosingPresenter: CityChoosingTableViewAdapterDelegate {
         interactor?.save(city)
 
         onChooseCity?(city)
-    }
-}
-
-extension CityChoosingPresenter {
-
-    private enum Appearance {
-
-        static let navigationBarTitle = R.string.localizable.citySelectionChoosingNavigationBarTitle()
     }
 }

@@ -29,11 +29,9 @@
 		EAB99F6827A8032700F2C4E9 /* CitiesFetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F6727A8032700F2C4E9 /* CitiesFetchService.swift */; };
 		EAB99F6A27A8061200F2C4E9 /* DBCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F6927A8061200F2C4E9 /* DBCity.swift */; };
 		EAB99F7027A8094100F2C4E9 /* DBLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F6F27A8094100F2C4E9 /* DBLocation.swift */; };
-		EAB99F7227A80CB500F2C4E9 /* AppInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F7127A80CB500F2C4E9 /* AppInteractor.swift */; };
 		EAB99F7427A80CE100F2C4E9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F7327A80CE100F2C4E9 /* AppCoordinator.swift */; };
 		EAB99F7727A80CF600F2C4E9 /* AppCoordinatorImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F7627A80CF600F2C4E9 /* AppCoordinatorImp.swift */; };
 		EAB99F7927A80D0100F2C4E9 /* AppCoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F7827A80D0100F2C4E9 /* AppCoordinatorAssembly.swift */; };
-		EAB99F7C27A80D2A00F2C4E9 /* AppInteractorImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F7B27A80D2A00F2C4E9 /* AppInteractorImp.swift */; };
 		EAB99F8227A8110700F2C4E9 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F8127A8110700F2C4E9 /* DIContainer.swift */; };
 		EAB99F8727A8137A00F2C4E9 /* CitySelectionCoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F8627A8137A00F2C4E9 /* CitySelectionCoordinatorAssembly.swift */; };
 		EAB99F8927A813C400F2C4E9 /* CitySelectionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB99F8827A813C400F2C4E9 /* CitySelectionCoordinator.swift */; };
@@ -151,11 +149,9 @@
 		EAB99F6727A8032700F2C4E9 /* CitiesFetchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesFetchService.swift; sourceTree = "<group>"; };
 		EAB99F6927A8061200F2C4E9 /* DBCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBCity.swift; sourceTree = "<group>"; };
 		EAB99F6F27A8094100F2C4E9 /* DBLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBLocation.swift; sourceTree = "<group>"; };
-		EAB99F7127A80CB500F2C4E9 /* AppInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInteractor.swift; sourceTree = "<group>"; };
 		EAB99F7327A80CE100F2C4E9 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		EAB99F7627A80CF600F2C4E9 /* AppCoordinatorImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorImp.swift; sourceTree = "<group>"; };
 		EAB99F7827A80D0100F2C4E9 /* AppCoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorAssembly.swift; sourceTree = "<group>"; };
-		EAB99F7B27A80D2A00F2C4E9 /* AppInteractorImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInteractorImp.swift; sourceTree = "<group>"; };
 		EAB99F8127A8110700F2C4E9 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		EAB99F8627A8137A00F2C4E9 /* CitySelectionCoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectionCoordinatorAssembly.swift; sourceTree = "<group>"; };
 		EAB99F8827A813C400F2C4E9 /* CitySelectionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectionCoordinator.swift; sourceTree = "<group>"; };
@@ -433,7 +429,6 @@
 			isa = PBXGroup;
 			children = (
 				EAA1EA8727A7B1A000D6EAB1 /* AppDelegate.swift */,
-				EAB99F7A27A80D1800F2C4E9 /* Interactor */,
 				EAB99F7527A80CE400F2C4E9 /* Coordinator */,
 			);
 			path = App;
@@ -534,15 +529,6 @@
 				EAB99F7827A80D0100F2C4E9 /* AppCoordinatorAssembly.swift */,
 			);
 			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		EAB99F7A27A80D1800F2C4E9 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				EAB99F7127A80CB500F2C4E9 /* AppInteractor.swift */,
-				EAB99F7B27A80D2A00F2C4E9 /* AppInteractorImp.swift */,
-			);
-			path = Interactor;
 			sourceTree = "<group>";
 		};
 		EAB99F8027A810FD00F2C4E9 /* Shared */ = {
@@ -1158,7 +1144,6 @@
 				EAB9A03727A933B700F2C4E9 /* UIButton+Extensions.swift in Sources */,
 				EAA4A2C227A9924E00B60435 /* DatabaseChanges.swift in Sources */,
 				EAB9A03327A92B5900F2C4E9 /* ForecastLanguage.swift in Sources */,
-				EAB99F7227A80CB500F2C4E9 /* AppInteractor.swift in Sources */,
 				EAB99F6827A8032700F2C4E9 /* CitiesFetchService.swift in Sources */,
 				EABFFC1027AA679B00851989 /* HourForecast.swift in Sources */,
 				EABFFBFF27AA63CF00851989 /* HourForecastModuleAssembly.swift in Sources */,
@@ -1192,7 +1177,6 @@
 				EABFFC1827AA696200851989 /* HourForecastInteractorInput.swift in Sources */,
 				EAB9A01427A9253300F2C4E9 /* UIImageView+Extensions.swift in Sources */,
 				EABFFC1227AA67F600851989 /* HourForecastModuleInput.swift in Sources */,
-				EAB99F7C27A80D2A00F2C4E9 /* AppInteractorImp.swift in Sources */,
 				EAB9A02827A928A600F2C4E9 /* Endpoint.swift in Sources */,
 				EAB99FD227A901FE00F2C4E9 /* ServerWeather.swift in Sources */,
 				EAB99F5F27A7FE9A00F2C4E9 /* BaseCoordinator.swift in Sources */,

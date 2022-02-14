@@ -14,6 +14,7 @@ protocol CityChoosingTableViewAdapter {
 // swiftlint:disable type_name
 final class CityChoosingTableViewAdapterImp: NSObject,
                                              CityChoosingTableViewAdapter {
+// swiftlint:enable type_name
 
     private weak var tableView: UITableView?
 
@@ -27,6 +28,7 @@ final class CityChoosingTableViewAdapterImp: NSObject,
         self.tableView?.register(cell: CityTableViewCell.self)
         self.tableView?.delegate = self
         self.tableView?.dataSource = self
+        self.tableView?.alwaysBounceVertical = false
         self.tableView?.separatorStyle = .none
     }
 
