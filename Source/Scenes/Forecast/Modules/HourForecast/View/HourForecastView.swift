@@ -30,13 +30,7 @@ final class HourForecastView: BaseViewController {
 
 // MARK: - HourForecastViewInput implementation
 
-extension HourForecastView: HourForecastViewInput {
-
-    func setTitle(_ title: String) {
-
-        self.title = title
-    }
-}
+extension HourForecastView: HourForecastViewInput {}
 
 // MARK: - UIConfigurable protocol implementation
 
@@ -44,8 +38,14 @@ extension HourForecastView: UIConfigurable {
 
     func configureUI() {
 
+        setInitialAppearance()
         addSubviews()
         makeConstraints()
+    }
+
+    func setInitialAppearance() {
+
+        title = Appearance.navigationBarTitle
     }
 
     func addSubviews() {
@@ -61,5 +61,13 @@ extension HourForecastView: UIConfigurable {
             make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing)
             make.bottom.equalToSuperview()
         }
+    }
+}
+
+private extension HourForecastView {
+
+    enum Appearance {
+
+        static let navigationBarTitle = R.string.localizable.forecastHourForecastNavigationBarTitle()
     }
 }

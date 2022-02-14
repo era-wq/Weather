@@ -25,8 +25,6 @@ extension HourForecastPresenter: HourForecastViewOutput {
 
     func onViewDidLoad() {
 
-        view?.setTitle(R.string.localizable.forecastHourForecastNavigationBarTitle())
-
         let forecast = adaptHours()
 
         tableViewAdapter?.set(forecast)

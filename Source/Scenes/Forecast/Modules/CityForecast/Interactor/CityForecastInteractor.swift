@@ -88,7 +88,7 @@ private extension CityForecastInteractor {
             +
             changes.insertions
                 .compactMap { $0.eraseToLocal() })
-                .last
+                .first
         else { return }
 
         presenter?.onObtainingWeather(weather)

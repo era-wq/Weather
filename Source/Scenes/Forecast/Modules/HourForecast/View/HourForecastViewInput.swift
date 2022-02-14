@@ -1,6 +1,3 @@
 import Foundation
 
-protocol HourForecastViewInput: AnyObject {
-
-    func setTitle(_ title: String)
-}
+protocol HourForecastViewInput: AnyObject {}

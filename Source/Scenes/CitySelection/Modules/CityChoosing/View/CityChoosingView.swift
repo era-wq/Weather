@@ -32,11 +32,6 @@ final class CityChoosingView: BaseViewController {
 
 extension CityChoosingView: CityChoosingViewInput {
 
-    func setTitle(_ title: String) {
-
-        self.title = title
-    }
-
     func isLoading(_ isLoading: Bool) {
 
         isContentLoading(isLoading)
@@ -49,8 +44,14 @@ extension CityChoosingView: UIConfigurable {
 
     func configureUI() {
 
+        setInitialAppearance()
         addSubviews()
         makeConstraints()
+    }
+
+    func setInitialAppearance() {
+
+        title = Appearance.navigationBarTitle
     }
 
     func addSubviews() {
@@ -63,5 +64,13 @@ extension CityChoosingView: UIConfigurable {
         tableView.snp.makeConstraints { make in
             make.edges.equalTo(view.safeAreaLayoutGuide.snp.edges)
         }
+    }
+}
+
+private extension CityChoosingView {
+
+    enum Appearance {
+
+        static let navigationBarTitle = R.string.localizable.citySelectionChoosingNavigationBarTitle()
     }
 }
